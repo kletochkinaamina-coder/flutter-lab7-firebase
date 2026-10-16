@@ -1,17 +1,16 @@
-# srsp5_app
+# Лабораторная работа 7. Firebase Realtime Database и Push Notifications
 
-A new Flutter project.
+Форма регистрации из СРСП 5, подключённая к Firebase: при отправке формы данные пользователя сохраняются в Firebase Realtime Database (`users/`), после успешной регистрации приходит push-уведомление. Приложение принимает push-уведомления через Firebase Cloud Messaging (FCM).
 
-## Getting Started
+Выполнила: Ильяс Амина
 
-This project is a starting point for a Flutter application.
+## Запуск
 
-A few resources to get you started if this is your first Flutter project:
+1. Создать проект в Firebase Console, включить Realtime Database (Test mode).
+2. Добавить Android-приложение с package name `kz.amina.lab7_app`.
+3. Скачать `google-services.json` и положить в `android/app/`.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+flutter run
+```
